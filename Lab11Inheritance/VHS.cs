@@ -8,6 +8,7 @@ namespace Lab11Inheritance
     {
         public int CurrentTime { get; set; }
 
+        //constructor
         public VHS(string Title, string Category, int RunTime, List<string> Scenes)
           : base(Title, Category, RunTime, Scenes)
         {
@@ -15,13 +16,22 @@ namespace Lab11Inheritance
         }
         public override void Play()
         {
-            string sc = Scenes[CurrentTime];
+            if (CurrentTime < Scenes.Count)
+            {
+            string s = Scenes[CurrentTime];
+            Console.WriteLine(s);
             CurrentTime++;
+            }
+            else
+            {
+                Rewind();
+            }
             //A method called Play() that plays the scene at the current time and then increments CurrentTime. 
 
         }
-        public override void Rewind()
+        public void Rewind()
         {
+            Console.WriteLine("Movie done! Rewind it.");
             CurrentTime = 0;
         }
     }

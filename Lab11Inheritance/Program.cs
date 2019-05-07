@@ -10,11 +10,10 @@ namespace Lab11Inheritance
         {
             Blockbuster b = new Blockbuster(); //Blockbuster constructor
             b.CheckOut();
+            b.PrintMovies();
             
 
-            
-
-
+           
             //List<string> Scenes = new List<string>() { "Capture Vespa", "Blow up deathstar", "Pizza the hutt" };
             //Movie m = new Movie("Space Balls", "Comedy", 120, Scenes);
             //m.PrintInfo();

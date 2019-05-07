@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab11Inheritance
 {
-    class Movie
+    public abstract class Movie
     {
         public string Title { get; set; } //properties can be called/used like methods, ie. m.Title();
         public string Category { get; set; }
@@ -41,11 +41,11 @@ namespace Lab11Inheritance
             Console.WriteLine("The play method only works on physical media.");
         }
 
-        public virtual void Rewind()
-        {
-
-        }
-
+        public void PlayWholeMovie()
+            {
+             Console.WriteLine("Starting Movie...")
+             PrintScenes();
+            }
 
     }
 

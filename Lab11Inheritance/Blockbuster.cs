@@ -6,10 +6,34 @@ namespace Lab11Inheritance
 {
     class Blockbuster
     {
+       public List<Movie> Movies {get; set;}
+
         public static List<Movie> Movies = new List<Movie>();
 
-        public Blockbuster()
+        public Blockbuster() //constructor
         {
+            Movies = new List<Movie>();
+            List<string> DumbScenes = new List<string>() {"swindle blind kid", "kill gas man", "buy leisure suits"};
+            VHS dumbDumber = new VHS("Dumb and Dumber", "Comedy", 120, DumbScenes);
+            Movies.Add(dumbDumber);
+
+            Movies = new List<Movie>();
+            List<string> HangoverScenes= new List<string>() {"Tiger and Mike Tyson scene", "Drink a lot", "Find Doug on roof"};
+            VHS Hangover = new VHS("The Hangover", "Comedy", 120, HangoverScenes);
+            Movies.Add(Hangover);
+
+            Movies = new List<Movie>();
+            List<string> FindingNemoScenes = new List<string>() {"Nemo gets stolen", "Jellyfish", "Dentist scenes"};
+            DVD FindingNemo = new DVD("Finding Nemo", "Disney", 90, FindingNemoScenes);
+            Movies.Add(FindingNemo);
+
+            Movies = new List<Movie>();
+            List<string> FrozenScenes = new List<string>() {"Wanna build a snowman", "ice stuff", "snow"};
+            DVD Frozen = new DVD("Dumb and Dumber", "Disney", 90, FrozenScenes);
+            Movies.Add(FrozenScenes);
+
+
+
             List<string> Scenes = new List<string>() { "Jefferson Starship", "Boba Fett Cartoon", "Cantina Scene", "Lumpy Playing with Bantha" };
             VHS vhs0 = new VHS("Star Wars Holiday Special", "HotMess", 90, Scenes);
             Movies.Add(vhs0);
@@ -47,7 +71,8 @@ namespace Lab11Inheritance
             
             for (int i = 0; i < Movies.Count; i++)
             {
-                Console.WriteLine($"Movie {i} : {Movies[i].Title}" );
+                //Movie m = Movies[i]; Tommy's code 
+                Console.WriteLine($"{i} : {Movies[i].Title}" );
             }
             
             //this will print all the movie titles in the Movies list along with their indexes.
@@ -55,11 +80,18 @@ namespace Lab11Inheritance
 
         public void CheckOut()
         {
-            Console.WriteLine("Please select a movie: ");
+            Console.WriteLine("Please select an index from the following list: ");
             PrintMovies();
-            int index = int.Parse(Console.ReadLine());
+            string input = (Console.ReadLine());
+            int index = int.Parse(input);
             Movies[index].PrintInfo(); //do this instead of if statements because of the for loop in PrintMovies
-                //if (index == 0)
+                
+            //Movie m = Movies[index];    Tommy's code
+            //m.PrintInfo();
+            //m.Play();
+
+
+            //if (index == 0)
                 //    {
                 //    Console.WriteLine(0);
                 //    }
