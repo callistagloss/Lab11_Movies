@@ -1,0 +1,11 @@
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.csprojAssemblyReference.cache
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.AssemblyInfoInputs.cache
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.AssemblyInfo.cs
+C:\Users\grand\source\repos\Lab11Inheritance\bin\Debug\netcoreapp2.1\Lab11Inheritance.deps.json
+C:\Users\grand\source\repos\Lab11Inheritance\bin\Debug\netcoreapp2.1\Lab11Inheritance.runtimeconfig.json
+C:\Users\grand\source\repos\Lab11Inheritance\bin\Debug\netcoreapp2.1\Lab11Inheritance.runtimeconfig.dev.json
+C:\Users\grand\source\repos\Lab11Inheritance\bin\Debug\netcoreapp2.1\Lab11Inheritance.dll
+C:\Users\grand\source\repos\Lab11Inheritance\bin\Debug\netcoreapp2.1\Lab11Inheritance.pdb
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.dll
+C:\Users\grand\source\repos\Lab11Inheritance\obj\Debug\netcoreapp2.1\Lab11Inheritance.pdb
